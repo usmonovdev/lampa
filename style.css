@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: rgb(253, 249, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box {
+    width: 600px;
+    height: 600px;
+}
+
+.box .svitcher {
+    width: 4px;
+    height: 40px;
+    background: #2F2F2F;
+    border-radius: 4px;
+    position: relative;
+    top: 10px;
+    left: 200px;
+    transform: rotate(-10deg);
+    transform-origin: bottom;
+    transition: 200ms;
+}
+
+.svitcher::before {
+    content: '';
+    width: 14px;
+    height: 20px;
+    border-radius: 60%;
+    background: #2F2F2F;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+.box .svitcherUsti {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #5b5b5b, #2F2F2F);
+    border-radius: 35%;
+    position: relative;
+    top: -10px;
+    left: 180px;
+    transform: rotate(50deg);
+}
+
+.box .qizil {
+    width: 150px;
+    height: 140px;
+    border-radius: 35% 35% 0 0;
+    background: linear-gradient(to right, rgb(203, 46, 46), rgb(243, 107, 107), rgb(231, 101, 101));
+    position: relative;
+    top: -80px;
+    left: 180px;
+    transform: rotate(-40deg);
+    z-index: 100;
+}
+
+.qizil span {
+    width: 12px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px inset rgb(229, 20, 20);
+    display: inline-block;
+    margin-left: 12px;
+    position: relative;
+    left: 10px;
+    top: 35px;
+}
+
+.box .lampaUsti {
+    width: 220px;
+    height: 150px;
+    background: linear-gradient(to right, rgb(154, 154, 154),rgb(198, 198, 198), rgb(212, 212, 212));
+    border-radius: 220px 220px 0px 0px;
+    position: relative;
+    top: -138px;
+    left: 220px;
+    transform: rotate(-40deg);
+    z-index: 50 !important;
+}
+
+.lampaUsti::before {
+    content: '';
+    width: 100%;
+    height: 15px;
+    display: inline-block;
+    background: linear-gradient(to right, rgb(53, 53, 53), grey, rgb(151, 151, 151));
+    position: relative;
+    top: 90%;
+    z-index: 50;
+}
+
+.lampa {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgb(249, 235, 155), rgb(255, 170, 0));
+    border-radius: 50%;
+    position: relative;
+    top: -220px;
+    left: 315px;
+}
+
+.nur {
+    width: 360px;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(255, 217, 0, 0.667), rgba(244, 232, 166, 0));
+    position: relative;
+    top: -143px;
+    left: 237px;
+    transform: rotate(-40deg) scaleY(0);
+    transform-origin: top left;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transition: 100ms;
+}
+
+.ustunTepa {
+    width: 20px;
+    height: 240px;
+    background: linear-gradient(to right,#2F2F2F, #4e4d4d, #2F2F2F);
+    position: relative;
+    top: -730px;
+    left: 120px;
+    transform: rotate(50deg);
+}
+
+.aylana {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #4e4d4d, #2F2F2F);
+    position: relative;
+    top: -815px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.aylana::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to top, #4e4d4d, #2F2F2F);
+    border-radius: 50%;
+}
+
+.ustunPast {
+    width: 20px;
+    height: 300px;
+    background: linear-gradient(to right,#2F2F2F, #4e4d4d, #2F2F2F);
+    position: relative;
+    top: -900px;
+    left: 120px;
+    transform: rotate(-40deg);
+    z-index: 50;
+}
+
+.pastiKichik {
+    width: 170px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(to top,#2F2F2F, #444444);
+    position: relative;
+    top: -950px;
+    left: 140px;
+    z-index: 100;
+}
+
+.pasti {
+    width: 280px;
+    height: 40px;
+    background: linear-gradient(to top,#2F2F2F, #444444);
+    position: relative;
+    top: -990px;
+    left: 90px;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 200;
+}
